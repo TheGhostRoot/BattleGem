@@ -1,0 +1,24 @@
+name: BattleGem
+version: '${project.version}'
+main: me.thegoldenmine.gemofwar.GemOfWar
+api-version: 1.13
+authors: [ TheGoldenMine ]
+description: The Gem is a mystical stone that can spawn mobs that attack the enemy.
+website: https://www.spigotmc.org/members/thegoldenmine.1437483/
+commands:
+  battlegem:
+    description: This command witll give you the gem. If you don't have gemofwar.canhave permission then you can't get the gem.
+    usage: /battlegem
+    aliases: [bg, gem]
+  battlegem-help:
+    description: The help menu
+    usage: /battlegem-help
+    aliases: [bg-help, gem-help]
+  battlegem-set:
+    description: You can set the max amount of mobs that you can spawn
+    usage: /battlegem-set [number]
+    aliases: [bg-set, gem-set]
+permissions:
+  battlegem.canhave:
+    description: You can have the gem of war
+    default: op
